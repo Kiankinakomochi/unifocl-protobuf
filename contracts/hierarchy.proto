@@ -1,0 +1,13 @@
+syntax = "proto3";
+package Unifocl.Contracts;
+
+message HierarchyNode {
+  int32 instance_id = 1;
+  string name = 2;
+  bool is_active = 3;
+  int32 parent_id = 4;
+}
+
+message HierarchyResponse {
+  repeated HierarchyNode nodes = 1;
+}
